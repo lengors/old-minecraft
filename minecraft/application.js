@@ -30,7 +30,7 @@ export class MinecraftApplication extends Application {
             systems: [
                 [EventSystem],
                 [UISystem],
-                [CounterSystem]
+                [CounterSystem],
                 [DisplaySystem],
                 [ChunckSystem, { _workerCount: 8 }],
                 [CameraSystem],
