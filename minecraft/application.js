@@ -11,6 +11,7 @@ import { ChunckSystem } from "./systems/chunckSystem.js";
 import { PlayerSystem } from "./systems/playerSystem.js";
 import { Fullscreen } from "../engine/dom/fullscreen.js";
 import { UISystem } from "../engine/ui/systems/system.js";
+import { CounterSystem } from "./systems/counterSystem.js";
 import { Application } from "../engine/core/application.js";
 import { Matrix4, Vector3 } from "../engine/math/matrix.js";
 import { EventSystem } from "../engine/core/systems/eventSystem.js";
@@ -29,6 +30,7 @@ export class MinecraftApplication extends Application {
             systems: [
                 [EventSystem],
                 [UISystem],
+                [CounterSystem]
                 [DisplaySystem],
                 [ChunckSystem, { _workerCount: 8 }],
                 [CameraSystem],
