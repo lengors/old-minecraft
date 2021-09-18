@@ -5,11 +5,10 @@ import "../engine/dom/prefabs/window.js";
 import "../engine/graphics/prefabs/light.js";
 import "../engine/graphics/prefabs/camera.js";
 import { Pointer } from "../engine/dom/pointer.js";
+import { Prefabs } from "../engine/core/prefabs.js";
+import { Texture } from "../engine/graphics/texture.js";
 import { ChunckSystem } from "./systems/chunckSystem.js";
 import { PlayerSystem } from "./systems/playerSystem.js";
-import { Prefabs } from "../engine/core/prefabs.js";
-import { CounterSystem } from "./systems/counterSystem.js";
-import { Texture } from "../engine/graphics/texture.js";
 import { Fullscreen } from "../engine/dom/fullscreen.js";
 import { UISystem } from "../engine/ui/systems/system.js";
 import { Application } from "../engine/core/application.js";
@@ -57,9 +56,9 @@ export class MinecraftApplication extends Application {
             chunckManagerComponent: {
                 _component: ChunckManagerComponent,
                 targetName: 'player',
-                radius: 6,
-                width: 32,
-                depth: 32,
+                radius: 8,
+                width: 16,
+                depth: 16,
                 chunckPrefab: {
                     materialComponent: {
                         material: {

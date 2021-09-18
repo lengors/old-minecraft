@@ -41,12 +41,10 @@ export class UISystem extends System {
                             enable: [
                                 ['DEPTH_TEST'],
                                 ['CULL_FACE'],
-                                /* ['BLEND'] */
                             ],
-                            /* blendFunc: [['SRC_ALPHA', 'ONE_MINUS_SRC_ALPHA']], */
                             frontFace: [['CCW']],
                             cullFace: [['BACK']],
-                        }, constraints: [Constraints.margins(50)]
+                        }, constraints: [Constraints.margins(25)]
                     }
                 });
         }

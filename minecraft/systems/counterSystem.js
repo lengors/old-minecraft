@@ -41,7 +41,7 @@ export class CounterSystem extends System {
             this.application.instantiateGameObject(Prefabs.counterDisplayer, {
                 textComponent: {
                     width: 'auto',
-                    constraints: [Constraints.centerX, Constraints.top(15)]
+                    constraints: [Constraints.centerX, Constraints.top(5)]
                 }
             });
     }
